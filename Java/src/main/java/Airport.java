@@ -10,12 +10,12 @@ import java.util.*;
 // made by Vitali Shulha
 // 4-Jan-2019
 
+// edited by Sitnikov D.
+
 public class Airport {
     private List<? extends Plane> planes;
 
-
-
-    public List<PassengerPlane> getPasPl() {
+    public List<PassengerPlane> getPassengerPlane() {
         List<? extends Plane> l = this.planes;
         List<PassengerPlane> x = new ArrayList<>();
         for (Plane p : l) {if (p instanceof PassengerPlane) {x.add((PassengerPlane) p);}}
@@ -27,12 +27,9 @@ public class Airport {
         for (Plane plane : planes) {
             if (plane instanceof MilitaryPlane) {
                 militaryPlanes.add((MilitaryPlane) plane);
-            } //if
-            else {
-
-            } // else
-        } //for
-        return militaryPlanes;
+            }
+                    }
+        return MilitaryPlanes;
     }
 
     public PassengerPlane getPassengerPlaneWithMaxPassengersCapacity() {
@@ -43,12 +40,6 @@ public class Airport {
                 planeWithMaxCapacity = passengerPlanes.get(i);
             }
         }
-
-
-
-
-
-
         return planeWithMaxCapacity;
     }
 
