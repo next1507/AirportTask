@@ -33,7 +33,7 @@ abstract public class Plane {
     }
 
     @Override
-    public String toString() {
+    public String toString() { // don't understand variable 
         return "Plane{" +
                 "model='" + model + '\'' +
                 ", maxSpeed=" + maxSpeed +
@@ -43,7 +43,7 @@ abstract public class Plane {
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) { // don't understand variable "o"
         if (this == o) return true;
         if (!(o instanceof Plane)) return false;
         Plane plane = (Plane) o;
@@ -54,7 +54,7 @@ abstract public class Plane {
     }
 
     @Override
-    public int hashCode() {
+    public int hashCode() { // don't understand method
         return Objects.hash(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
     }
 }
