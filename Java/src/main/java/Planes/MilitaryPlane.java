@@ -18,23 +18,17 @@ public class MilitaryPlane extends Plane{
     }
 
     @Override
-    public String toString() {
+    public String toString() {  // не понятно, что делает метод
         return super.toString().replace("}",
                 ", type=" + type +
                 '}');
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) { // не понятен метод и объявленная в нем переменная
         if (this == o) return true;
         if (!(o instanceof MilitaryPlane)) return false;
         if (!super.equals(o)) return false;
         MilitaryPlane that = (MilitaryPlane) o;
         return type == that.type;
     }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), type);
-    }
-}
