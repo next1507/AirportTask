@@ -20,21 +20,14 @@ public class PassengerPlane extends Plane{
     }
 
     @Override
-    public String toString() {
+    public String toString() { // don't understand method
         return super.toString().replace("}",
                 ", passengersCapacity=" + passengersCapacity +
                 '}');
     }
 
-//    @Override
-//    public String toString() {
-//        return super.toString().replace("}",
-//                ", passengersCapacity=" + passengersCapacity +
-//                        '}');
-//    }
-
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) { // don't understand variable "o"
         if (this == o) return true;
         if (!(o instanceof PassengerPlane)) return false;
         if (!super.equals(o)) return false;
@@ -43,7 +36,7 @@ public class PassengerPlane extends Plane{
     }
 
     @Override
-    public int hashCode() {
+    public int hashCode() { // don't understand method
         return Objects.hash(super.hashCode(), passengersCapacity);
     }
 }
