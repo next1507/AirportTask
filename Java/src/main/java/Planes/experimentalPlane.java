@@ -23,17 +23,17 @@ public class experimentalPlane extends Plane{
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) { // don't understand variable "o"
         return super.equals(o);
     }
 
     @Override
-    public int hashCode() {
+    public int hashCode() { // don't understand variable
         return super.hashCode();
     }
 
     @Override
-    public String toString() {
+    public String toString() { // don't understand variable
         return "experimentalPlane{" +
                 "model='" + model + '\'' +
                 '}';
